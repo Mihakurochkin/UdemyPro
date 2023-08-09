@@ -86,11 +86,12 @@ const newAarray = [...array];
 const q = {
   one: 1,
   two: 2,
-  
+
 }
 
 const newObj = {...q};
 
-console.log('newObj', newObj);
+newObj.one = 3;
+console.log(q);
 
 
