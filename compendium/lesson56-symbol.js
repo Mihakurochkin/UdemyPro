@@ -19,12 +19,12 @@ for(let value in obj) console.log('', value);
 const myAwesomeDB = {
   movies: [],
   actors: [],
-  [Symbol('id')]: 123
+  [Symbol.for('id')]: 123
 }
 
 //
 
 myAwesomeDB.id = '24342987'
 
-console.log('', myAwesomeDB['id']);
+console.log('', myAwesomeDB[Symbol.for('id')]);
 console.log('', myAwesomeDB);
